@@ -134,7 +134,7 @@ body {
 
 .form-inline input {
     flex: 1;
-    padding: 10px 14px;
+    padding: 12px 8px;
     border-radius: 20px;
     border: 2px solid #ffa300;
     background-color: transparent;
