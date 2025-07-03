@@ -1,351 +1,39 @@
-/* Existing CSS reused - no changes here, just minified if needed. Use media queries for mobile responsiveness if not already in place. */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #13154f;
-    color: #ffa300;
-    line-height: 1.0;
+  background-color: #13154f;
+  color: #ffa300;
+  line-height: 1.0;
 }
 
 .hero {
-    background: url('assets/bg-hero.png') no-repeat center center;
-    background-size: cover;
-    padding: 10px 30px;
-    text-align: center;
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-.text-header p {
-    font-size: 45px;
-    margin-bottom: 4px;
-}
-
-.text-header h1 span {
-    color: #ffa300;
-    font-weight: 700;
-    font-size: 36px;
-}
-
-.video-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 640px;
-    aspect-ratio: 16 / 9;
-    margin: 0 auto;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.video-wrapper iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
-}
-
-.simulacao {
-    color: #ffa300;
-    text-align: center;
-    font-weight: 600;
-    font-size: 4px;
-    padding: 32px 16px;
-}
-
-.simulacao img {
-    margin-top: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.simulacao p {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    line-height: 1.4;
-}
-
-.formulario {
-    background-color: #f7f7f7;
-    padding: 48px 20px;
-}
-
-.form-container {
-    background-color: #13154f;
-    color: white;
-    padding: 40px 25px;
-    border-radius: 30px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 340px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.form-container h2 {
-    font-size: 1.6rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
-.form-container p {
-    color: #ffa300;
-    font-weight: 600;
-    margin-bottom: 30px;
-    font-size: 1rem;
-    line-height: 1.4;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 14px;
-    border-radius: 20px;
-    border: none;
-    background-color: #eeeeee;
-    color: #13154f;
-    font-size: 1rem;
-    outline: none;
-}
-
-.form-group input::placeholder {
-    color: #666;
-}
-
-.form-inline {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 25px;
-    gap: 10px;
-}
-
-.form-inline label {
-    flex: 1;
-    font-size: 1.00rem;
-}
-
-.form-inline input {
-    flex: 1;
-    padding: 10px 14px;
-    border-radius: 20px;
-    border: 2px solid #ffa300;
-    background-color: transparent;
-    color: #fff;
-}
-
-.form-inline input::placeholder {
-    color: #ccc;
-}
-
-.btn-submit {
-    width: 100%;
-    background-color: #ffa300;
-    color: white;
-    border: none;
-    padding: 14px;
-    border-radius: 30px;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.btn-submit:hover {
-    background-color: #ffa300;
-}
-
-.faq {
-    padding: 48px 20px;
-    padding-left: 32px;
-}
-
-.faq h2 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.faq ul {
-    list-style: none;
-    font-size: 5px;
-    color: #ffa300;
-    padding-left: 0;
-    margin-bottom: 24px;
-}
-
-.faq li {
-    margin-bottom: 8px;
-}
-
-.whatsapp-placeholder {
-    margin-top: 18px;
-    font-size: 18px;
-    text-align: center;
+  background: url('assets/bg-hero.png') no-repeat center center;
+  background-size: cover;
+  padding: 10px 30px;
+  text-align: center;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .logo-container {
-    margin-bottom: 60px;
-    text-align: center;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .logo-container img {
-    max-width: 200px;
-    height: auto;
+  max-width: 200px;
+  height: auto;
 }
 
-.text-header {
-    text-align: center;
-    margin-bottom: 36px;
-}
-
-.text-header .pre-title {
-    font-size: 100px;
-    color: #eeeeee;
-    margin-bottom: 4px;
-}
-
-.text-header h1 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #ffa300;
-    margin-bottom: 4px;
-}
-
-.text-header h1 span {
-    font-weight: 700;
-    color: #ffa300;
-}
-
-.text-header .sub-title {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #ffa300;
-    margin: 0;
-}
-
-.text-header .pre-title {
-    font-size: 13px;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-}
-
-.text-header h1 {
-    font-size: 28px;
-    font-weight: 700;
-    color: #ffa300;
-    margin-bottom: 4px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.text-header .sub-title {
-    font-size: 24px;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-    color: #ffa300;
-    margin: 0;
-}
-
-.simulacao p {
-    font-size: 15px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.4;
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.simulacao .descricao-secundaria {
-    font-size: 24px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 14px;
-}
-
-.form-group-inline {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.form-group-inline input {
-    padding: 14px;
-    border-radius: 20px;
-    border: none;
-    background-color: #eeeeee;
-    color: #13154f;
-    font-size: 1rem;
-    outline: none;
-    flex: 1;
-}
-
-.form-group-inline input.ddd {
-    max-width: 80px;
-}
-
-.descricao-secundaria-top {
-    font-size: 24px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    color: #13154f;
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.faq-item details {
-    margin-bottom: 12px;
-    font-size: 14px;
-    cursor: pointer;
-    color: #eeeeee;
-}
-
-.faq-item summary {
-    font-weight: 600;
-    outline: none;
-}
-
-.faq-item p {
-    margin-top: 6px;
-    margin-left: 20px;
-    font-weight: 400;
-    font-size: 12px;
-    color: #ffa300;
-}
-/* Ícone flutuante do WhatsApp */
-.whatsapp-fixo {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.whatsapp-fixo:hover {
-    transform: scale(1.1);
-}
-
-.whatsapp-fixo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-}
 .hero-content {
   max-width: 640px;
   margin: 0 auto;
@@ -355,4 +43,232 @@ body {
   gap: 20px;
   text-align: center;
   padding: 20px;
+}
+
+.text-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.text-header .pre-title {
+  font-size: 13px;
+  font-weight: 400;
+  color: #eeeeee;
+}
+
+.text-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffa300;
+  margin-bottom: 4px;
+}
+
+.text-header .sub-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffa300;
+  margin: 0;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.simulacao {
+  color: #ffa300;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 32px 16px;
+}
+
+.simulacao img {
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formulario {
+  background-color: #eeeeee;
+  padding: 42px 20px;
+}
+
+.descricao-secundaria-top {
+  font-size: 24px;
+  font-weight: 700;
+  color: #13154f;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.form-container {
+  background-color: #13154f;
+  color: white;
+  padding: 35px 25px;
+  border-radius: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-container h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.form-container p {
+  color: #ffa300;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 20px;
+  border: none;
+  background-color: #eeeeee;
+  color: #13154f;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-group-inline {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-group-inline input {
+  padding: 14px;
+  border-radius: 20px;
+  border: none;
+  background-color: #eeeeee;
+  color: #13154f;
+  font-size: 1rem;
+  outline: none;
+  flex: 1;
+}
+
+.form-group-inline input.ddd {
+  max-width: 80px;
+}
+
+.form-inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  gap: 10px;
+}
+
+.form-inline label {
+  flex: 1;
+  font-size: 1.00rem;
+}
+
+.form-inline input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: 2px solid #ffa300;
+  background-color: transparent;
+  color: #fff;
+}
+
+.form-inline input::placeholder {
+  color: #ccc;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #ffa300;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #ffa300;
+}
+
+.faq {
+  padding: 48px 20px 48px 32px;
+}
+
+.faq h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.faq-item details {
+  margin-bottom: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #eeeeee;
+}
+
+.faq-item summary {
+  font-weight: 600;
+  outline: none;
+}
+
+.faq-item p {
+  margin-top: 6px;
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffa300;
+}
+
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-fixo:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-fixo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
