@@ -14,10 +14,10 @@ body {
 .hero {
     background: url('assets/bg-hero.png') no-repeat center center;
     background-size: cover;
-    padding: 10px 30px;
+    padding: 10px 20px;
     text-align: center;
     color: white;
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
