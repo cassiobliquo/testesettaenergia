@@ -81,11 +81,11 @@ body {
 .form-container {
     background-color: #13154f;
     color: white;
-    padding: 40px 25px;
-    border-radius: 30px;
+    padding: 41px 26px;
+    border-radius: 18px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 340px;
+    max-width: 361px;
     margin: 0 auto;
     text-align: center;
 }
