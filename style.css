@@ -28,7 +28,7 @@ body {
 .text-header h1 span {
     color: #ffa300;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .video-wrapper {
@@ -37,7 +37,7 @@ body {
     max-width: 640px;
     aspect-ratio: 16 / 9;
     margin: 0 auto;
-    border-radius: 12px;
+    border-radius: 9px;
     overflow: hidden;
 }
 
@@ -49,15 +49,16 @@ body {
 }
 
 .simulacao {
+    margin-top: 110px;
     color: #ffa300;
     text-align: center;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 4px;
-    padding: 32px 16px;
+    padding: 40px 20px;
 }
 
 .simulacao img {
-    margin-top: 10px;
+    margin-top: 1px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -66,12 +67,12 @@ body {
 .simulacao p {
     margin-bottom: 10px;
     font-size: 1rem;
-    line-height: 1.4;
+    line-height: 1;
 }
 
 .formulario {
     background-color: #f7f7f7;
-    padding: 48px 20px;
+    padding: 60px 20px;
 }
 
 .form-container {
@@ -81,15 +82,15 @@ body {
     border-radius: 30px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 340px;
+    max-width: 390px;
     margin: 0 auto;
     text-align: center;
 }
 
 .form-container h2 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .form-container p {
