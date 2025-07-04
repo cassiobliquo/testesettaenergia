@@ -49,7 +49,7 @@ body {
 }
 
 .simulacao {
-    margin-top: 110px;
+    margin-top: 200px;
     color: #ffa300;
     text-align: center;
     font-weight: 900;
@@ -58,7 +58,7 @@ body {
 }
 
 .simulacao img {
-    margin-top: 1px;
+    margin-top: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -135,9 +135,9 @@ body {
 
 .form-inline input {
     flex: 1;
-    padding: 10px 14px;
+    padding: 12px 09px;
     border-radius: 20px;
-    border: 2px solid #ffa300;
+    border: 1px solid #ffa300;
     background-color: transparent;
     color: #fff;
 }
