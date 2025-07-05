@@ -6,29 +6,50 @@
 }
 
 body {
-    background-color: #13154f;
+    background-color: #13154f; /* O fundo do body é o mesmo do hero */
     color: #ffa300;
-    line-height: 1.0;
+    line-height: 1.2;
 }
 
 .hero {
     background: url('assets/bg-hero.png') no-repeat center center;
     background-size: cover;
-    padding: 38px 38px;
+    padding: 38px 20px 80px 20px; /* Padding inferior para dar espaço ao divisor */
     text-align: center;
     color: white;
 }
 
-
-.text-header p {
-    font-size: 45px;
-    margin-bottom: 4px;
+.logo-container {
+    margin-bottom: 20px;
 }
 
-.text-header h1 span {
-    color: #ffa300;
+.logo-container img {
+    max-width: 300px;
+    height: auto;
+}
+
+.text-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.text-header .pre-title {
+    font-size: 15px;
+    font-weight: 400;
+    color: #eeeeee;
+}
+
+.text-header h1 {
+    font-size: 36px;
     font-weight: 700;
-    font-size: 30px;
+    color: #ffa300;
+    margin: 4px 0;
+}
+
+.text-header .sub-title {
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffa300;
 }
 
 .video-wrapper {
@@ -48,28 +69,79 @@ body {
     display: block;
 }
 
+/* --- SEÇÃO DE BENEFÍCIOS (dentro do hero) --- */
 .simulacao {
-    margin-top: 200px;
     color: #ffa300;
     text-align: center;
-    font-weight: 900;
-    font-size: 4px;
-    padding: 40px 20px;
+    padding-top: 20px;
 }
 
-.simulacao img {
-    margin-top: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.beneficios {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
-.simulacao p {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    line-height: 1;
+.item {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
 
+.item .icone {
+    width: 60px;
+    height: 60px;
+    background-color: #ffa300;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.item p {
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1,2;
+}
+
+.simulacao .descricao-secundaria {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- DIVISOR ENTRE SEÇÕES --- */
+.divisor-wrapper {
+    position: relative;
+    background-color: #f7f7f7; /* Cor de fundo da seção seguinte */
+    height: 50px;
+}
+
+.divisor-circle {
+    width: 70px;
+    height: 70px;
+    background-color: #ffa300;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -35px; /* Metade para fora, criando a sobreposição */
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.divisor-circle img {
+    width: 28px;
+    height: 28px;
+}
+
+/* --- SEÇÃO DO FORMULÁRIO --- */
 .formulario {
     background-color: #f7f7f7;
     padding: 60px 20px;
@@ -105,6 +177,30 @@ body {
     margin-bottom: 15px;
 }
 
+.form-group-inline {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group-inline input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 20px;
+    border: none;
+    background-color: #eeeeee;
+    color: #13154f;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-group-inline input.ddd {
+    flex: 0 1 80px;
+}
+
+.form-group-inline input.telefone {
+    flex: 1 1 auto;
+}
+
 .form-group input {
     width: 100%;
     padding: 14px;
@@ -120,36 +216,42 @@ body {
     color: #666;
 }
 
+/* AJUSTE FINAL DO FORMULÁRIO */
 .form-inline {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 25px;
-    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 15px;
 }
 
 .form-inline label {
-    flex: 1;
-    font-size: 1.00rem;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 5px;
 }
 
 .form-inline input {
-    flex: 1;
-    padding: 09px 09px;
+    width: 100%;
+    padding: 14px;
     border-radius: 20px;
     border: 1px solid #ffa300;
     background-color: transparent;
     color: #fff;
 }
 
-.form-inline input::placeholder {
-    color: #ccc;
+.possui-cupom {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-align: center;
 }
 
 .btn-submit {
     width: 100%;
     background-color: #ffa300;
-    color: white;
+    color: #13154f;
     border: none;
     padding: 14px;
     border-radius: 30px;
@@ -160,144 +262,25 @@ body {
 }
 
 .btn-submit:hover {
-    background-color: #ffa300;
+    background-color: #e69300;
 }
 
+/* --- SEÇÃO FAQ --- */
 .faq {
-    padding: 48px 20px;
-    padding-left: 32px;
+    background-color: #13154f;
+    padding: 48px 32px;
 }
 
 .faq h2 {
-    font-size: 28px;
+    font-size: 32px; /* AJUSTE FINAL DO TÍTULO */
     font-weight: 700;
     margin-bottom: 20px;
-}
-
-.faq ul {
-    list-style: none;
-    font-size: 5px;
-    color: #ffa300;
-    padding-left: 0;
-    margin-bottom: 24px;
-}
-
-.faq li {
-    margin-bottom: 8px;
-}
-
-.whatsapp-placeholder {
-    margin-top: 18px;
-    font-size: 18px;
     text-align: center;
 }
 
-.logo-container {
-    margin-bottom: 60px;
-    text-align: center;
-}
-
-.logo-container img {
-    max-width: 200px;
-    height: auto;
-}
-
-.text-header {
-    text-align: center;
-    margin-bottom: 36px;
-}
-
-.text-header .pre-title {
-    font-size: 100px;
-    color: #eeeeee;
-    margin-bottom: 4px;
-}
-
-.text-header h1 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #ffa300;
-    margin-bottom: 4px;
-}
-
-.text-header h1 span {
-    font-weight: 700;
-    color: #ffa300;
-}
-
-.text-header .sub-title {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #ffa300;
-    margin: 0;
-}
-
-.text-header .pre-title {
-    font-size: 13px;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-}
-
-.text-header h1 {
-    font-size: 28px;
-    font-weight: 700;
-    color: #ffa300;
-    margin-bottom: 4px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.text-header .sub-title {
-    font-size: 24px;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-    color: #ffa300;
-    margin: 0;
-}
-
-.simulacao p {
-    font-size: 15px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.4;
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.simulacao .descricao-secundaria {
-    font-size: 24px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 14px;
-}
-
-.form-group-inline {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.form-group-inline input {
-    padding: 14px;
-    border-radius: 20px;
-    border: none;
-    background-color: #eeeeee;
-    color: #13154f;
-    font-size: 1rem;
-    outline: none;
-    flex: 1;
-}
-
-.form-group-inline input.ddd {
-    max-width: 80px;
-}
-
-.descricao-secundaria-top {
-    font-size: 24px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    color: #13154f;
-    text-align: center;
-    margin-bottom: 24px;
+.faq-item {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .faq-item details {
@@ -305,6 +288,8 @@ body {
     font-size: 14px;
     cursor: pointer;
     color: #eeeeee;
+    border-bottom: 1px solid #3a3d8a;
+    padding-bottom: 10px;
 }
 
 .faq-item summary {
@@ -313,13 +298,14 @@ body {
 }
 
 .faq-item p {
-    margin-top: 6px;
+    margin-top: 8px;
     margin-left: 20px;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     color: #ffa300;
 }
-/* Ícone flutuante do WhatsApp */
+
+/* --- ÍCONE FLUTUANTE WHATSAPP --- */
 .whatsapp-fixo {
     position: fixed;
     bottom: 20px;
@@ -339,6 +325,4 @@ body {
 .whatsapp-fixo img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
 }
